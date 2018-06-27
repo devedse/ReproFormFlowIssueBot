@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Webjobs" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="3.15.2.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Azure" Version="3.15.2.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Calling" Version="3.15.2.2" />
+    <PackageReference Include="Microsoft.Bot.Connector.DirectLine" Version="3.0.2" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.11" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="BotResponses.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BotResponses.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="BotResponses.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BotResponses.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

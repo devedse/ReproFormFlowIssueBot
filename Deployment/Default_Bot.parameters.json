@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ciName": {
+      "value": "REPROBOT"
+    },
+    "PackageFileName": {
+      "value": "ReproBot.Bot.zip"
+    },
+    "botEnv": {
+      "value": "DEV"
+    },
+    "location": {
+      "value": "West Europe"
+    },
+    "sku": {
+      "value": "S1"
+    },
+    "kind": {
+      "value": "sdk"
+    },
+    "namePrefix": {
+      "value": "DS-AvaBot"
+    },
+    "createNewStorage": {
+      "value": true
+    },
+    "storageAccountResourceId": {
+      "value": ""
+    },
+    "appId": {
+      "value": "fc7aaaa6-22ee-4195-86d3-3140bc1c2ee7"
+    },
+    "appSecret": {
+      "value": "a54e#r#17tFtazj2"
+    },
+    "azureWebJobsBotFrameworkDirectLineSecret": {
+      "value": ""
+    },
+    "zipUrl": {
+      "value": "https://connectorprod.blob.core.windows.net/bot-packages/csharp-abs-functions_formbot.zip"
+    },
+    "proactiveZipUrl": {
+      "value": ""
+    },
+    "useAppInsights": {
+      "value": true
+    },
+    "appInsightsLocation": {
+      "value": "West Europe"
+    },
+
+    "createServerFarm": {
+      "value": true
+    },
+    "serverFarmLocation": {
+      "value": "West Europe"
+    },
+    "serverFarmSku": {
+      "value": {
+        "name": "S1",
+        "tier": "Standard",
+        "size": "S1",
+        "family": "S",
+        "capacity": 1
+      }
+    },
+    "endpoint": {
+      "value": ""
+    },
+    "luisApiLocation": {
+      "value": "Global"
+    },
+    "functionsExtensionVersion": {
+      "value": "~1"
+    }
+  }
+}

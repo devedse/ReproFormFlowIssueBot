@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 namespace ReproBot.BotLogic
 {
     //TODO: Fill these in
-    [LuisModel("<appid>", "<secret>", Staging = true)]
+    [LuisModel("<appid>", "<secret>", threshold: 0.5, Staging = true)]
     [Serializable]
     public class RootLuisDialog : LuisDialog<object>
     {
